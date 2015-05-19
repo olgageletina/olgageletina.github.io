@@ -215,7 +215,7 @@ input:focus::-ms-input-placeholder {
 /* submit button */
 .nl-submit-wrap {
 	position: relative;
-	right: 1em;
+	left: 1em;
 	/*margin-top: 0.4em;*/
 }
 
