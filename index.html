@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
-<body>
-<form id="nl-form" class="nl-form">
-	I need
-	<div class="nl-field nl-dd">
-	<a class="nl-field-toggle">any food</a>
-	<ul>
-		<li class="nl-dd-checked">rejuvination</li>
-		<li>immunity</li>
-		<li>strength</li>
-		<li>Japanese</li>
-		<li>Italian</li>
-	</ul>
-</div>
-	today 
-	<br />
-	<div class="nl-submit-wrap">
-		<button class="nl-submit" type="submit">Find a restaurant</button>
-	</div>
-	<div class="nl-overlay"></div>
-</form>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+				I need
+				<select>
+						<option value="1" selected>enzymes</option>
+						<option value="2">immunity</option>
+						<option value="3">strength</option>
+						<option value="4">energy</option>
+					</select>
+				</ul>
+				</div>
+				today 
+				<br />
+				<div class="nl-submit-wrap">
+					<button class="nl-submit" type="submit">Find a restaurant</button>
+				</div>
+				<div class="nl-overlay"></div>
+			</form>
+		</div>
+		</div>
+		<script src="js/nlform.js"></script>
+		<script>
+				var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
 </html>
