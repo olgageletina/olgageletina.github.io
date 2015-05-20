@@ -70,7 +70,7 @@
 .nl-field ul {
 	position: absolute;
 	visibility: hidden;
-	background: #76C3BD;
+	background: #5550f2;
 	left: -0.5em;
 	top: 50%;
 	font-size: 80%;
@@ -223,7 +223,7 @@ input:focus::-ms-input-placeholder {
 	text-transform: uppercase;
 	cursor: pointer;
 	position: relative;
-	background: #76C3BD;
+	background: #5550f2;
 	color: #fff;
 	padding: 0 1em 0 0;
 	font-size: 40%;
@@ -237,16 +237,16 @@ input:focus::-ms-input-placeholder {
 	float: left;
 	padding: 0 0.7em;
 	margin: 0 0.8em 0 0;
-	background: #69B1A9;
+	background: #7d6bf2;
 }
 
 .no-touch .nl-form .nl-submit:hover,
 .no-touch .nl-form .nl-submit:active {
-	background: #69B1A9;
+	background: #7d6bf2;
 }
 
 .no-touch .nl-form .nl-submit:hover:before {
-	background: #58a199;
+	background: #f2f2f2;
 }
 
 /* overlay becomes visible when a field is opened */
