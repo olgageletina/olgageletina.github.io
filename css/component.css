@@ -61,16 +61,16 @@
 .nl-form select  {
 	line-height: inherit;
 	display: inline-block;
-	color: #f87c99;
+	color: #5550f2;
 	cursor: pointer;
-	border-bottom: 1px dashed #f87c99;
+	border-bottom: 1px dashed #5550f2;
 }
 
 /* drop-down list / text element */
 .nl-field ul {
 	position: absolute;
 	visibility: hidden;
-	background: #f87c99;
+	background: #5550f2;
 	left: -0.5em;
 	top: 50%;
 	font-size: 80%;
