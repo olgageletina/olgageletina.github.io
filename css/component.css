@@ -12,7 +12,7 @@
 /* general style for the form */
 .nl-form {
 	width: 100%;
-	margin: 0.3em auto 0 auto;
+	margin: auto auto 0 auto;
 	font-size: 2em;
 	line-height: 1.5;
 }
