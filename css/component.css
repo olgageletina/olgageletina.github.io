@@ -232,14 +232,14 @@ input:focus::-ms-input-placeholder {
 	letter-spacing: 3px;
 }
 
-.nl-submit:before {
+/*.nl-submit:before {
 	content: "\e001";
 	color: #fff;
 	float: left;
 	padding: 0 0.7em;
 	margin: 0 0.8em 0 0;
 	background: #7d6bf2;
-}
+}*/
 
 .no-touch .nl-form .nl-submit:hover,
 .no-touch .nl-form .nl-submit:active {
