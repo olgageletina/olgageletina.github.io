@@ -87,7 +87,7 @@
 			this.elOriginal.parentNode.insertBefore( this.fld, this.elOriginal );
 			this.elOriginal.style.display = 'none';
 		},
-		/*_createInput : function() {
+		_createInput : function() {
 			var self = this;
 			this.fld = document.createElement( 'div' );
 			this.fld.className = 'nl-field nl-ti-text';
@@ -115,7 +115,7 @@
 			this.fld.appendChild( this.optionsList );
 			this.elOriginal.parentNode.insertBefore( this.fld, this.elOriginal );
 			this.elOriginal.style.display = 'none';
-		},*/
+		},
 		_initEvents : function() {
 			var self = this;
 			this.toggle.addEventListener( 'click', function( ev ) { ev.preventDefault(); ev.stopPropagation(); self._open(); } );
