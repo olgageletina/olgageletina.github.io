@@ -122,7 +122,7 @@
 .nl-dd ul li.nl-dd-checked:before,
 .nl-submit:before,
 .nl-field-go:before {
-	font-family: 'nlicons';
+	font-family: 'Merriweather', serif;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
