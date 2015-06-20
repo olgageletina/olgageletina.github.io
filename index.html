@@ -60,8 +60,8 @@
 		</script>
 		<script>
 		function myFunction() {
-
-			var selected_index = oForm.elements["need"].selectedIndex;
+			var e = document.getElementById("slt_need");
+			var selected_index = e.options["need"].selectedIndex;
  
 			if(selected_index == 5)
 			{
@@ -73,6 +73,9 @@
 			{
 			   alert('Please select a country from the drop down list');
 			}
+
+
+			break;
 		/*var opElems = document.getElementsByTagName('option'),
     	strings = ['Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper. ','Four mint leaves has enough iron.'];
 
