@@ -56,18 +56,13 @@
 		</script>
 		<script>
 		function myFunction() {
-			var e = document.getElementById("slt_need");
-			var selected_index = e.options.selectedIndex;
- 
-			if(selected_index = 0) {
-				document.getElementById("meh").innerHTML = "Why?";
+		
+				document.getElementById("meh").innerHTML = document.getElementById("slt_need").selectedIndex;
 
 			   /*var selected_option_value = oForm.elements["need"].options[selected_index].value;
 			   var selected_option_text = oForm.elements["need"].options[selected_index].text;*/
-			} else {
-			   document.getElementById("meh").innerHTML = "DOES THIS WORK";
 			}
-			
+
 		/*var opElems = document.getElementsByTagName('option'),
     	strings = ['Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper. ','Four mint leaves has enough iron.'];
 
@@ -81,7 +76,7 @@
 			        elem.nodeValue = strings[1] + curText;
 	    		}
 			}*/
-		}
+		
 		</script>
 	</body>
 </html>
