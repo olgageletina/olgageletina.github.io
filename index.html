@@ -19,15 +19,15 @@
 				
 				<select>
 				<ul>
-						<option value="1" selected>peace of mind</option>
-						<option value="2">immunity</option>
+						<li><option value="1" selected>peace of mind</option></li>
+						<li><option value="2">immunity</option></li>
 						<option value="3">strength</option>
 						<option value="4">energy</option>
-						<option vale = "5">enzymes</option>
+						<option value ="5">enzymes</option>
 					</select>
 				</ul>
 				today 
-				<button class="nl-submit" type="submit">inspire me</button>
+				<button class="nl-submit" type="submit" onclick = "myFunction()">inspire me</button>
 				<div class="nl-submit-wrap">
 				<img src="sante_smoothie_final.jpg">
 				<div class="body-text">
@@ -42,6 +42,23 @@
 		<script src="js/nlform.js"></script>
 		<script>
 				var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+		<script>
+		function myFunction() {
+		var liElems = document.getElementsByTagName('li'),
+    	strings = ['Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper. ','Four mint leaves has enough iron.'];
+
+			for (var i = 0, len = liElems.length; i < len; i++){
+			    elem = liElems[i].firstChild,
+			    curText = elem.nodeValue;
+			    if (i%2 == 0){
+			        elem.nodeValue = strings[0] + curText;
+			    }
+			    else {
+			        elem.nodeValue = strings[1] + curText;
+	    		}
+			}
+		}
 		</script>
 	</body>
 </html>
