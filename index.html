@@ -51,10 +51,10 @@
 			for (var i = 1, len = opElems.length; i < len; i++){
 			    elem = opElems[i].firstChild,
 			    curText = elem.nodeValue;
-			    if (i%2 == 0){
+			    if (i == 1){
 			        elem.nodeValue = strings[0] + curText;
 			    }
-			    else {
+			    if (i == 2){
 			        elem.nodeValue = strings[1] + curText;
 	    		}
 			}
