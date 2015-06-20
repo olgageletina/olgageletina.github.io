@@ -42,6 +42,7 @@
 
 				
 				<button class="nl-submit" type="submit" onclick="myFunction()">test</button>
+				<p id="demo"></p>
 				<div class="nl-submit-wrap">
 				<img src="sante_smoothie_final.jpg">
 				<div class="body-text">
@@ -62,10 +63,11 @@
 
 			var selected_index = oForm.elements["need"].selectedIndex;
  
-			if(selected_index > 4)
+			if(selected_index = 1)
 			{
-			   var selected_option_value = oForm.elements["need"].options[selected_index].value;
-			   var selected_option_text = oForm.elements["need"].options[selected_index].text;
+				document.getElementById("demo").innerHTML = "Input OK";
+			   /*var selected_option_value = oForm.elements["need"].options[selected_index].value;
+			   var selected_option_text = oForm.elements["need"].options[selected_index].text;*/
 			}
 			else
 			{
