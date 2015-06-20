@@ -45,11 +45,11 @@
 		</script>
 		<script>
 		function myFunction() {
-		var liElems = document.getElementsByTagName('li'),
+		var opElems = document.getElementsByTagName('option'),
     	strings = ['Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper. ','Four mint leaves has enough iron.'];
 
-			for (var i = 0, len = liElems.length; i < len; i++){
-			    elem = liElems[i].firstChild,
+			for (var i = 1, len = opElems.length; i < len; i++){
+			    elem = opElems[i].firstChild,
 			    curText = elem.nodeValue;
 			    if (i%2 == 0){
 			        elem.nodeValue = strings[0] + curText;
