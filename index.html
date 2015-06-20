@@ -19,14 +19,26 @@
 				
 				<select>
 				<ul>
-						<li><option value="1">peace of mind</option></li>
-						<li><option value="2">immunity</option></li>
+						<option value="1" selected>peace of mind</option>
+						<option value="2">immunity</option>
 						<option value="3">strength</option>
 						<option value="4">energy</option>
 						<option value ="5">enzymes</option>
 					</select>
 				</ul>
 				today 
+				<br />
+
+				<select size="1" id="slt_need" name="need">
+				<ul>
+						<option value="1">peace of mind</option>
+						<option value="2">immunity</option>
+						<option value="3">strength</option>
+						<option value="4">energy</option>
+						<option value ="5">enzymes</option>
+					</select>
+				</ul>
+
 				<button class="nl-submit" type="submit">inspire me</button>
 				<button class="nl-submit" type="submit" onclick="myFunction()">test</button>
 				<div class="nl-submit-wrap">
@@ -46,7 +58,19 @@
 		</script>
 		<script>
 		function myFunction() {
-		var opElems = document.getElementsByTagName('option'),
+
+			var selected_index = oForm.elements["need"].selectedIndex;
+ 
+			if(selected_index > 0)
+			{
+			   var selected_option_value = oForm.elements["need"].options[selected_index].value;
+			   var selected_option_text = oForm.elements["need"].options[selected_index].text;
+			}
+			else
+			{
+			   alert('Please select a country from the drop down list');
+			}
+		/*var opElems = document.getElementsByTagName('option'),
     	strings = ['Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper. ','Four mint leaves has enough iron.'];
 
 			for (var i = 1, len = opElems.length; i < len; i++){
@@ -58,7 +82,7 @@
 			    if (i == 2){
 			        elem.nodeValue = strings[1] + curText;
 	    		}
-			}
+			}*/
 		}
 		</script>
 	</body>
