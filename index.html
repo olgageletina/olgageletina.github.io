@@ -12,31 +12,25 @@
 	</head>
 	<body class="nl-blurred">
 		<div class="container demo-1">
-			<div class="main clearfix">
+			<div class="main clearfix" id="meh3">
 				<form id="nl-form" class="nl-form">
 				<br />
+				
 				I need
 				
-				<select>
-						<option value="1">peace of mind</option>
-						<option value="2">immunity</option>
-						<option value="3">strength</option>
-						<option value="4">energy</option>
-						<option value ="5" selected>enzymes</option>
-					</select>
+				<select id="slt_seed">
+					<option value="0">peace of mind</option>
+					<option value="1">immunity</option>
+					<option value="2">strength</option>
+					<option value="3">energy</option>
+					<option value="4">enzymes</option>
+				</select>
 				today 
-				<button class="nl-submit" type="submit">inspire me</button>
+
 				<br />
+				<div class="nl-overlay"></div>
 				</form>
 
-				<select size="1" id="slt_need" name="need">
-						<option value="1">peace of mind</option>
-						<option value="2">immunity</option>
-						<option value="3">strength</option>
-						<option value="4">energy</option>
-						<option value="5">enzymes</option>
-				</select>
-				<button class="nl-submit" onclick="myFunction()">test</button>
 				<div id="meh"></div>
 				<div id="meh2"></div>
 
@@ -47,20 +41,43 @@
 				Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper.
 				</div-->
 				<div>
-				<div class="nl-overlay"></div>
+				
 			
 		</div>
 		</div>
 		<script src="js/nlform.js"></script>
 		<script>
-				var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+				
 		</script>
 		<script>
-		function myFunction() {
-				/*var selected_option = document.getElementById("slt_need").selectedIndex;*/
-				var selected_option = document.getElementById("slt_need").selectedIndex;
+		function myFunction(el) {
 
-				if (selected_option == '0'){
+				/*var selected_option = document.getElementById("slt_need").selectedIndex;*/
+				var selected_option = el.elOriginal.selectedIndex,
+					defaultOptions = {
+						src: '',
+						text: selected_option
+					};
+
+				var options = {
+					0 : { src: 'sante_smoothie_final.jpg', text: 'Eating 4 mint leaves will satisfy your daily iron intake.'},
+					1 : { src: 'sante_smoothie_2.jpg', text: 'Ginger has been in use for at least 4,400 years. The root is nearly a panacea - it treats cold, flu, and nausea symptoms.'},
+					2 : { src: 'sante_smoothie_4.jpg', text: 'Due to high level of nitrate, drinking beetroot juice can lead to higher power output for the same level of effort exerted.'},
+					3 : { src: 'sante_smoothie_3.jpg', text: 'Chlorophyll — found in green leafy vegetables such as spinach, broccoli and kale — it can help increase brain functionality and energy levels.'},
+					4 : { src: 'papaya_final.png', text: 'Papayas contain enzymes that digest proteins by breaking the amino acid content.'}
+				};
+
+				var option = (selected_option in options)
+					? options[selected_option] 
+					: defaultOptions;
+
+				document.getElementById("meh").innerHTML = '<img src="' + option.src + '" />';
+				document.getElementById("meh2").innerHTML = option.text;
+				/*document.getElementById('meh3').innerHTML = option.text;*/
+
+				
+
+				/*if (selected_option == '0'){
 					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_final.jpg\'>';
 					document.getElementById("meh2").innerHTML = "Eating 4 mint leaves will satisfy your daily iron intake.";
 
@@ -75,13 +92,18 @@
 					document.getElementById("meh2").innerHTML = "Chlorophyll — found in green leafy vegetables such as spinach, broccoli and kale — can help increase brain fucntiona and energy levels.";
 				} else if (selected_option == '4'){
 					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_5.jpg\'>';
-					document.getElementById("meh2").innerHTML =  "Papayas contain digestive enzymes that digest proteins by breaking the amino acid content.";
+					document.getElementById("meh2").innerHTML =  "Papayas contain enzymes that digest proteins by breaking the amino acid content.";
 				} else {
 					document.getElementById("meh").innerHTML = ''
 					document.getElementById("meh2").innerHTML = document.getElementById("slt_need").selectedIndex;
 					
-			}
+			}*/
 		}
+
+
+		var nlform = new NLForm( document.getElementById( 'nl-form' ), function(el) {
+			myFunction(el);
+		} );
 
 			   /*var selected_option_value = oForm.elements["need"].options[selected_index].value;
 			   var selected_option_text = oForm.elements["need"].options[selected_index].text;*/

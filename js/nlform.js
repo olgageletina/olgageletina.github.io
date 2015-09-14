@@ -18,11 +18,12 @@
 		String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g, '');};
 	}
 
-	function NLForm( el ) {	
+	function NLForm( el, onChange ) {	
 		this.el = el;
 		this.overlay = this.el.querySelector( '.nl-overlay' );
 		this.fields = [];
 		this.fldOpen = -1;
+		this.onChange = onChange;
 		this._init();
 	}
 
@@ -31,11 +32,11 @@
 			var self = this;
 			Array.prototype.slice.call( this.el.querySelectorAll( 'select' ) ).forEach( function( el, i ) {
 				self.fldOpen++;
-				self.fields.push( new NLField( self, el, 'dropdown', self.fldOpen ) );
+				self.fields.push( new NLField( self, el, 'dropdown', self.fldOpen, self.onChange ) );
 			} );
 			Array.prototype.slice.call( this.el.querySelectorAll( 'input:not([type="hidden"])' ) ).forEach( function( el, i ) {
 				self.fldOpen++;
-				self.fields.push( new NLField( self, el, 'input', self.fldOpen ) );
+				self.fields.push( new NLField( self, el, 'input', self.fldOpen, self.onChange ) );
 			} );
 			this.overlay.addEventListener( 'click', function(ev) { self._closeFlds(); } );
 			this.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
@@ -47,13 +48,14 @@
 		}
 	};
 
-	function NLField( form, el, type, idx ) {
+	function NLField( form, el, type, idx, onChange ) {
 		this.form = form;
 		this.elOriginal = el;
 		this.pos = idx;
 		this.type = type;
 		this._create();
 		this._initEvents();
+		this.onChange = onChange;
 	}
 
 	NLField.prototype = {
@@ -167,12 +169,14 @@
 					this.selectedIdx = idx;
 					// update original select element´s value
 					this.elOriginal.value = this.elOriginal.children[ this.selectedIdx ].value;
+					this.onChange(this);
 				}
 			}
 			else if( this.type === 'input' ) {
 				this.getinput.blur();
 				this.toggle.innerHTML = this.getinput.value.trim() !== '' ? this.getinput.value : this.getinput.getAttribute( 'placeholder' );
 				this.elOriginal.value = this.getinput.value;
+				this.onChange(this);
 			}
 		}
 	};
