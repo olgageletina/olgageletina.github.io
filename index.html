@@ -10,13 +10,13 @@
 		<link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='css/component.css'>
 		<script src="js/modernizr.custom.js"></script>
 	</head>
-	<body class="nl-blurred">
+	<body class="nl-blurred" id="resimg">
 		<div class="container demo-1">
-			<div class="main clearfix" id="meh3">
+			<div class="main clearfix">
 				<form id="nl-form" class="nl-form">
 				<br />
 				
-				I need
+				<hl>I need
 				
 				<select id="slt_seed">
 					<option value="0">peace of mind</option>
@@ -25,32 +25,18 @@
 					<option value="3">energy</option>
 					<option value="4">enzymes</option>
 				</select>
-				today 
+				today</hl>
+					<div id="meh4"></div>
 
 				<br />
 				<div class="nl-overlay"></div>
+				<div id="restext"></div>
 				</form>
-
-				<div id="meh"></div>
-				<div id="meh2"></div>
-
-				<div class="nl-submit-wrap">
-				<!--img src="sante_smoothie_final.jpg" -->
-				<!--div class="body-text">
-				<br />
-				Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper.
-				</div-->
-				<div>
-				
-			
 		</div>
 		</div>
 		<script src="js/nlform.js"></script>
 		<script>
-				
-		</script>
-		<script>
-		function myFunction(el) {
+		function resFunction(el) {
 
 				/*var selected_option = document.getElementById("slt_need").selectedIndex;*/
 				var selected_option = el.elOriginal.selectedIndex,
@@ -60,68 +46,27 @@
 					};
 
 				var options = {
-					0 : { src: 'sante_smoothie_final.jpg', text: 'Eating 4 mint leaves will satisfy your daily iron intake.'},
-					1 : { src: 'sante_smoothie_2.jpg', text: 'Ginger has been in use for at least 4,400 years. The root is nearly a panacea - it treats cold, flu, and nausea symptoms.'},
-					2 : { src: 'sante_smoothie_4.jpg', text: 'Due to high level of nitrate, drinking beetroot juice can lead to higher power output for the same level of effort exerted.'},
+					0 : { src: 'mint_final.jpg', text: 'Eating 4 mint leaves will satisfy your daily iron intake.'},
+					1 : { src: 'ginger_final2.jpg', text: 'Ginger has been in use for at least 4,400 years. The root is nearly a panacea - it treats cold, flu, and nausea symptoms.'},
+					2 : { src: 'Beets.png', text: 'Due to high level of nitrate, drinking beetroot juice can lead to higher power output for the same level of effort exerted.'},
 					3 : { src: 'sante_smoothie_3.jpg', text: 'Chlorophyll — found in green leafy vegetables such as spinach, broccoli and kale — it can help increase brain functionality and energy levels.'},
-					4 : { src: 'papaya_final.png', text: 'Papayas contain enzymes that digest proteins by breaking the amino acid content.'}
+					4 : { src: 'papaya_final.jpg', text: 'Papayas contain enzymes that digest proteins by breaking the amino acid content.'}
 				};
 
 				var option = (selected_option in options)
 					? options[selected_option] 
 					: defaultOptions;
 
-				document.getElementById("meh").innerHTML = '<img src="' + option.src + '" />';
-				document.getElementById("meh2").innerHTML = option.text;
-				/*document.getElementById('meh3').innerHTML = option.text;*/
-
 				
-
-				/*if (selected_option == '0'){
-					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_final.jpg\'>';
-					document.getElementById("meh2").innerHTML = "Eating 4 mint leaves will satisfy your daily iron intake.";
-
-				} else if (selected_option == '1'){
-					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_2.jpg\'>';
-					document.getElementById("meh2").innerHTML = "Ginger has been in use for at least 4,400 years. The root is nearly a panacea - it treats cold, flu, and nasea symptoms.";
-				} else if (selected_option == '2'){
-					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_4.jpg\'>';
-					document.getElementById("meh2").innerHTML = "Due to high level of nitrate, drinking beetroot juice can lead to higher power output for the same level of effort exerted.";
-				} else if (selected_option == '3'){
-					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_3.jpg\'>';
-					document.getElementById("meh2").innerHTML = "Chlorophyll — found in green leafy vegetables such as spinach, broccoli and kale — can help increase brain fucntiona and energy levels.";
-				} else if (selected_option == '4'){
-					document.getElementById("meh").innerHTML = '<img src=\'sante_smoothie_5.jpg\'>';
-					document.getElementById("meh2").innerHTML =  "Papayas contain enzymes that digest proteins by breaking the amino acid content.";
-				} else {
-					document.getElementById("meh").innerHTML = ''
-					document.getElementById("meh2").innerHTML = document.getElementById("slt_need").selectedIndex;
-					
-			}*/
+				document.getElementById("resimg").setAttribute("style", "background: url(" + option.src + ") no-repeat center; background-size:100%;");
+				document.getElementById("restext").innerHTML =  "<hl2>"+option.text+"</hl2>";				
 		}
 
 
 		var nlform = new NLForm( document.getElementById( 'nl-form' ), function(el) {
-			myFunction(el);
+			resFunction(el);
 		} );
 
-			   /*var selected_option_value = oForm.elements["need"].options[selected_index].value;
-			   var selected_option_text = oForm.elements["need"].options[selected_index].text;*/
-			
-
-		/*var opElems = document.getElementsByTagName('option'),
-    	strings = ['Apricots are great for bone health. The fruit has moderate to significant amounts of all the necessary minerals  - calcium, phosphorous, manganese, iron, and copper. ','Four mint leaves has enough iron.'];
-
-			for (var i = 1, len = opElems.length; i < len; i++){
-			    elem = opElems[i].firstChild,
-			    curText = elem.nodeValue;
-			    if (i == 1){
-			        elem.nodeValue = strings[0] + curText;
-			    }
-			    if (i == 2){
-			        elem.nodeValue = strings[1] + curText;
-	    		}
-			}*/
 		
 		</script>
 	</body>
