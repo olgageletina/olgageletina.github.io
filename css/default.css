@@ -151,3 +151,13 @@ a:active {
 .body-text {
 	font-size: 60%;
 }
+
+@media screen and (max-width: 25em) {
+
+	hl2 {
+		font-size: .39em;
+		padding: .1em;
+		line-height: 50%;
+	}
+
+}
