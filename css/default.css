@@ -31,6 +31,9 @@ hl {
     background-color: #fff;
     color: #000000;
     padding: .2em;
+    font-size: 1.1em;
+    line-height: 150%;
+    
 }
 
 hl2 {
@@ -156,8 +159,14 @@ a:active {
 
 	hl2 {
 		font-size: .39em;
-		padding: .1em;
-		line-height: 50%;
+		padding: .2em;
+		line-height: 40%;
+	}
+
+	hl {
+		font-size: .50em;
+		padding: .2em;
+		
 	}
 
 }
