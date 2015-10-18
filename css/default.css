@@ -33,7 +33,8 @@ hl {
     padding: .2em;
     font-size: 1.1em;
     line-height: 150%;
-    
+    margin-bottom: 2em;
+
 }
 
 hl2 {
@@ -160,12 +161,39 @@ a:active {
 	hl2 {
 		font-size: .39em;
 		padding: .2em;
-		line-height: 40%;
+		line-height: 90% !important;
+		width: 100% !important;
 	}
 
 	hl {
 		font-size: .50em;
 		padding: .2em;
+		
+		
+	}
+
+}
+
+@media screen and (max-width: 18.5em) {
+	
+
+	#resimg{
+		background-size: 140% !important;
+	}
+
+	hl2 {
+		font-size: .39em;
+		padding: .2em;
+		line-height: 50% !important;
+
+		
+	}
+
+	hl {
+		font-size: .50em;
+		padding: .2em;
+		width: 100% !important;
+
 		
 	}
 

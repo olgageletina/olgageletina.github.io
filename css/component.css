@@ -240,6 +240,20 @@ input:focus::-ms-input-placeholder {
 
 @media screen and (max-width: 25em) {
 	.nl-form {
-		font-size: 1.5em;
+		width: 100% !important;
+		font-size: 1.6em;
 	}
+}
+
+@media screen and (max-width: 18.5em) {
+	.nl-form {
+		width: 100% !important;
+	}
+
+	.main {
+	    width: 100% !important;
+	    padding: .3em;
+	
+	}
+
 }
