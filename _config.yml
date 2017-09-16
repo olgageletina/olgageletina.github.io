@@ -1,0 +1,9 @@
+collections:
+  theme:
+  partner:
+
+
+google_analytics: "UA-105013659-1"
+
+plugins:
+  - jekyll-feed

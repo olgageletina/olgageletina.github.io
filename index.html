@@ -1,0 +1,37 @@
+---
+layout: greyPage
+---
+<div class="container main">
+
+
+{% for theme_item in site.theme %}
+
+	{% assign col_item = forloop.index | modulo: 5 %}
+
+	{% if col_item == 0 %}
+		{% assign col = 5 %}
+	{% else %}
+		{% assign col = col_item %}
+	{% endif %}
+
+		<div class="section col-{{ col }}">
+		 	<a href="individual-page.html"><div class="section themeContent">
+				<h3 class ="themeTitle">{{ theme_item.issue }}</h3>
+				<div class="clear"></div>
+				<p class ="themeCollaborators"> <strong> {{ theme_item.artist_name }} <br>
+				{{ theme_item.organization_name }}</strong></p>
+			</div></a>
+		 	<a href="individual-page.html" class="image"><img src="{{ theme_item.image_path }}" alt="{{ theme_item.issue }} : {{ theme_item.artist_name }}  and {{ theme_item.organization_name }}"></a>
+		</div>
+
+{% endfor %}
+
+<br>
+
+<div class="section col-1-5">
+	<div class="rule"></div>
+</div>
+
+<br><br><br> 
+
+</div> 
