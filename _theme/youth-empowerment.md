@@ -1,5 +1,6 @@
 ---
 image_path: /img/poster-placeholder.png
+<!-- layout: theme -->
 issue: Youth empowerment
 artist_name: Gail Anderson and Joe Newton
 artist_url: http://gailycurl.com/

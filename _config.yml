@@ -1,7 +1,15 @@
 collections:
   theme:
+   output: true
+   permalink: /:name
   partner:
 
+defaults:
+  - 
+    scope:
+      collection: theme
+    values:
+      layout: "theme"
 
 google_analytics: "UA-105013659-1"
 
