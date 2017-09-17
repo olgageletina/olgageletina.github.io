@@ -29,6 +29,10 @@ footer {
   background-color: #454545;
 }
 
+.main .themeMain {
+ margin-bottom: 12%;
+}
+
 .menu {
   background-color: #EF3F23;
   height: 0%;
@@ -118,7 +122,7 @@ footer {
   background-color: rgba(239,66,35,0.85);
   position: absolute;
   height: 50%;
-  bottom: 1%;
+  bottom: 0;
   -webkit-transition: opacity 0.3s;
     -moz-transition: opacity 0.3s;
     -ms-transition: opacity 0.3s;
@@ -147,7 +151,7 @@ footer {
 }
 
  a.image {
-  display: inline-block;  
+  display: grid;  
  }
 
 .third img{
@@ -616,6 +620,12 @@ a.footerLinks {
 
   .section, .individual .section, .about .section {
     grid-column: 1/11;
+  }
+
+  .main .themeMain {
+   margin-bottom: 3%;
+   /*grid-column: 2/10;*/
+
   }
 
   #topNavLogo  {

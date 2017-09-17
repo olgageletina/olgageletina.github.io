@@ -2,7 +2,17 @@
 image_path: /img/poster-placeholder.png
 issue: Islamaphobia
 artist_name: Morehshin Allahyari
+artist_name_short: Morehshin
 artist_url: http://www.morehshin.com/
+artist_photo_url: /img/artists/morehshin-allahyari.png
+artist_bio: <p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam,fringilla quam sit amet, commodo velit. Curabitur et turpis pretium, sagittis velit quis, fringilla nulla. Maecenas in tortor vitae metus lacinia commodo.</p><br><p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam, fringilla quam sit amet, commodo velit.</p>
 organization_name: Council on American-Islamic Relations
+organization_short_name: CAIR
 organization_url: https://www.cair.com/
+organization_logo_url: /img/organizations/cair.png
+organization_bio: <p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam,fringilla quam sit amet, commodo velit. Curabitur et turpis pretium, sagittis velit quis, fringilla nulla. Maecenas in tortor vitae metus lacinia commodo.</p><br><p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam, fringilla quam sit amet, commodo velit.</p>
+quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum, ipsum id hendrerit.
+main_entry: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum, ipsum id hendrerit euismod, quam felis congue lorem, vitae gravida ipsum arcu eget sem. Aenean nulla magna, molestie sed leo a, tincidunt aliquam velit. Aliquam erat volutpat.
+left_p: <p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam,fringilla quam sit amet, commodo velit. Curabitur et turpis pretium, sagittis velit quis, fringilla nulla. Maecenas in tortor vitae metus lacinia commodo.</p><br><p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam, fringilla quam sit amet, commodo velit.</p>
+right_p: <p>Curabitur et turpis pretium, sagittis velit quis, fringilla nulla. Maecenas in tortor vitae metus lacinia commodo.</p><br><p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam, fringilla quam sit amet, commodo velit. Curabitur et turpis pretium, sagittis velit quis, fringilla nulla. Maecenas in tortor vitae metus lacinia commodo. tortor vitae metus lacinia commodo nunc rutrum cursus.</p>
 ---

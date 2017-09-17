@@ -31,11 +31,10 @@
 							<p>We are</p><a href="about.html">
 							<h3>Amplify</h3></a><br>
 							<br>
-							<p>We are committed to dialogue around</p><a href="individual-page.html">
+							<p>We are committed to dialogue around</p>
 							
 							{% for theme_item in site.theme %}
-							<h3>{{ theme_item.issue }}</h3></a><br>
-							<a href="#">
+							<a href="{{ theme_item.url }}.html"><h3>{{ theme_item.issue }}</h3></a><br>
 							{% endfor %}
 
 							<br>

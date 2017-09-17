@@ -9,8 +9,8 @@ artist_bio: <p>Seymour Chwast is co-founder of Push Pin Studios and has been dir
 organization_name: Vera Institute for Justice
 organization_short_name: Vera
 organization_url: https://www.vera.org/
+organization_logo_url: /img/organizations/vera.svg
 organization_bio: <p>Vera Institute for Justice strives to urgently build and improve justice systems that ensure fairness, promote safety, and strengthen communities with of substantially reducing the number of people held in jail. In partnership 15 bellwether cities and major counties, Vera focuses on substantially lowering the number of people held in jail.</p><br><p>Nam lobortis hendrerit est, quis accumsan nisi suscipit quis. Donec eleifend nisl nisi, vel posuere dui egestas eu. Morbi eu massa aliquam, fringilla quam sit amet, commodo velit. Curabitur et turpis pretium, sagittis velit quis, fringilla nulla. Maecenas in tortor vitae metus lacinia commodo nunc rutrum cursus.</p>
-organization_logo_url: img/organizations/vera.svg 
 quote: The U.S. has 5% of the world’s population, and 25% of the world’s incarcerated.
 twitter_url: https://twitter.com/intent/tweet?text=The%20U.S.%20has%205%25%20of%20the%20world%E2%80%99s%20population%2C%20and%2025%25%20of%20the%20world%E2%80%99s%20incarcerated.+%23Incarceration+%23SocialJustice&via=amplifyjustice
 main_entry: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum, ipsum id hendrerit euismod, quam felis congue lorem, vitae gravida ipsum arcu eget sem. Aenean nulla magna, molestie sed leo a, tincidunt aliquam velit. Aliquam erat volutpat.
