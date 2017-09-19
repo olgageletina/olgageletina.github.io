@@ -20,9 +20,9 @@ prose:
  ignore: ['_layouts', '_config.yml', 'Gemfile', 'Gemfile.lock', 'style.css', '_includes']
  siteurl: "http://olgageletina.github.io/"
  media: "img"
- metadata:
-  _theme:
-   - name: "issue"
-     field:
-      element: "text"
-      label: "issue"
+ # metadata:
+ #  _theme:
+ #   - name: "issue"
+ #     field:
+ #      element: "text"
+ #      label: "issue"
