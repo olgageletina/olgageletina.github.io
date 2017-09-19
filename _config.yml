@@ -15,3 +15,14 @@ google_analytics: "UA-105013659-1"
 
 plugins:
   - jekyll-feed
+
+prose:
+ ignore: ['_layouts', '_config.yml', 'Gemfile', 'Gemfile.lock', 'style.css', '_includes']
+ siteurl: "http://olgageletina.github.io/"
+ media: "img"
+ metadata:
+  _theme:
+   - name: "issue"
+     field:
+      element: "text"
+      label: "issue"
