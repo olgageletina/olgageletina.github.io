@@ -25,9 +25,9 @@ prose:
    - name: "issue"
      field:
       element: "text"
-      label: "issue"
+      label: "Issue"
    - name: "image_path"
      field: 
       element: "select"
-      value: ""
-      label: "Splash image"
+      value: "/img/+"
+      label: "Poster image"
