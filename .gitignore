@@ -1,8 +1,10 @@
 _site
 .DS_Store
+**/.DS_Store
 .jekyll
 .jekyll-metadata
 .bundle
 
 /_site/
 _site/
+
