@@ -17,7 +17,7 @@ plugins:
   - jekyll-feed
 
 prose:
- ignore: ['_layouts', '_config.yml', 'Gemfile', 'Gemfile.lock', 'style.css', '_includes']
+ ignore: ['_layouts', '_config.yml', 'Gemfile', 'Gemfile.lock', 'style.css', '_includes', 'index']
  siteurl: "http://olgageletina.github.io/"
  media: "img"
  metadata:
@@ -28,6 +28,10 @@ prose:
       label: "Issue"
    - name: "image_path"
      field: 
-      element: "select"
+      element: "text"
       value: "/img/+"
       label: "Poster image"
+   - name: "artist_bio"
+     field:
+      element: "textarea"
+      label: "Artist Bio"
