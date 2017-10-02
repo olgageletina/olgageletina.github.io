@@ -29,12 +29,12 @@ layout: greyPageResources
 	</div>
 	<div class="section col-2-3">
 			<br>
-		{{ page.left_p }}
+		{{ page.left_p_html }}
 			<br>
 	</div>
 	<div class="section col-4-5">
 			<br>
-		{{ page.right_p }}
+		{{ page.right_p_html }}
 			<br>
 	</div>
 		<br>
@@ -54,11 +54,11 @@ layout: greyPageResources
 	<div class="section col-2-3">
 		<p><strong>{{ page.artist_name }}</strong></p>
 			<br>
-				{{ page.artist_bio }}
+				{{ page.artist_bio_html }}
 			<br>
 		<div class="third">
 			<br>
-			<a href="{{ page.artist_url }}"><img alt="{{ page.artist_name }} photo" src="{{ page.artist_photo_url }}"></a>
+			<a href="{{ page.artist_url }}"><img alt="{{ page.artist_name }} photo" src="{{ page.artist_image_url }}"></a>
 		</div>
 		<div class="clear">
 			<br>
@@ -71,12 +71,12 @@ layout: greyPageResources
 	<div class="section col-4-5">
 		<p><strong>{{ page.organization_name }}</strong><br></p>
 			<br>
-				{{ page.organization_bio }}
+				{{ page.organization_bio_html }}
 			<br>
 		<div class="clear">
 			<br>
 			<div class="half">
-				<a href="{{ page.organization_url }}"><img alt="{{ page.organization_name }} logo" src="{{ page.organization_logo_url }}"></a>
+				<a href="{{ page.organization_url }}"><img alt="{{ page.organization_name }} logo" src="{{ page.organization_image_url }}"></a>
 			</div>
 			<div class="clear">
 				<br>
