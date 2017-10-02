@@ -215,7 +215,7 @@ h1 {
   font-weight: 100;
 }
 
-h1 .red, h3 .red{
+h1 .red, h3 .red, h3.red{
     color: #EF3F23;
     display: inline;
     position: relative;
