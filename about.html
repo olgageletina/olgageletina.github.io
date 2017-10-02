@@ -85,7 +85,7 @@ published: true
 
 						{% for partner_item in site.partner %}
 
-							{% if partner_item.partner_logo_vertical == 0 %}
+							{% if partner_item.partner_logo_vertical == false %}
 								<li class="logos">
 									<a href="{{ partner_item.partner_url}}"><img src="{{ partner_item.partner_logo_image }}" alt="Partner: {{ partner_item.partner_name }}"></a>
 								</li>
