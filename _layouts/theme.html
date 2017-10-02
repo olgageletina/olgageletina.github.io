@@ -15,7 +15,11 @@ layout: greyPageResources
 		<div class="feature"><img alt="{{ page.artist_name }} and {{ page.organization_name }}" src="{{ page.image_path }}"></div> 
 	</div>
 	<div class="section col-4-5">
-		<h1>{{ page.quote }}</h1><a href="https://twitter.com/intent/tweet?text=The%20U.S.%20has%205%25%20of%20the%20world%E2%80%99s%20population%2C%20and%2025%25%20of%20the%20world%E2%80%99s%20incarcerated.+%23Incarceration+%23SocialJustice&via=amplifyjustice"><button>Tweet this quote</button></a>
+	
+		<h1>{{ page.quote }}</h1><a href="https://twitter.com/intent/tweet?text={{ page.quote | replace: "%", "%25" | split: " "  | join: "%20"}}+%23{{ page.issue |  remove: " " | remove: "’"  }}+%23SocialJustice&via=art_forarts"><button>Tweet this quote</button></a>
+		
+		<!-- {{ page.quote | replace: "%", "%25" | replace: ",", "%2C" | replace: "’", "%E2%80%99"| replace: "'", "%E2%80%99" | split: " "  | join: "%20"}} -->
+
 		<br>
 		<br>
 	</div>
