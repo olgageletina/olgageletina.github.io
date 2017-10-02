@@ -8,8 +8,8 @@ layout: greyPageResources
 		<h3>{{ page.issue }}</h3> 
 		<div class="clear"></div>
 		<p><strong>{{ page.artist_name }}<br>
-		{{ page.organization_name }}</strong></p>
-		<br>
+		{{ page.organization_name }}</strong></p> 
+		<br />
 	</div>
 	<div class="section col-2-3">
 		<div class="feature"><img alt="{{ page.artist_name }} and {{ page.organization_name }}" src="{{ page.image_path }}"></div> 
@@ -20,61 +20,57 @@ layout: greyPageResources
 		
 		<!-- {{ page.quote | replace: "%", "%25" | replace: ",", "%2C" | replace: "’", "%E2%80%99"| replace: "'", "%E2%80%99" | split: " "  | join: "%20"}} -->
 
-		<br>
-		<br>
 	</div>
 	<div class="section col-2-5">
 		<br>
 		<h3>{{ page.main_entry }}</h3>
 	</div>
 	<div class="section col-2-3">
-			<br>
-		{{ page.left_p_html }}
-			<br>
+			<p>
+			{{ page.left_p_html | newline_to_br }}
+			</p>
 	</div>
 	<div class="section col-4-5">
-			<br>
-		{{ page.right_p_html }}
-			<br>
+			<p>
+				{{ page.right_p_html | newline_to_br }}
+			</p>
+			<div class="clear">
+				<br /><br /><br /><br />
+			</div>
 	</div>
-		<br>
-		<br>
-		<br>
 
 	<div class="section col-1-5">
 		<div class="rule"></div>
 	</div>
-		<br>
 	<div class="section col-1">
+		<br>
 		<h3>Collaborators</h3>
-		<div class="clear">
-			<br>
-		</div>
 	</div>
 	<div class="section col-2-3">
+		<br>
 		<p><strong>{{ page.artist_name }}</strong></p>
-			<br>
-				{{ page.artist_bio_html }}
-			<br>
+			<p>
+				{{ page.artist_bio_html | newline_to_br }}
+			</p>
+			<br />
 		<div class="third">
-			<br>
 			<a href="{{ page.artist_url }}"><img alt="{{ page.artist_name }} photo" src="{{ page.artist_image }}"></a>
 		</div>
 		<div class="clear">
 			<br>
 			<a href="{{ page.artist_url }}"><button>More about {{ page.artist_name_short }}</button></a>
 		</div>
-			<br>
-			<br>
-			<br>
+		<br>
+	
 	</div>
 	<div class="section col-4-5">
-		<p><strong>{{ page.organization_name }}</strong><br></p>
-			<br>
-				{{ page.organization_bio_html }}
-			<br>
+		<br>
+		<p><strong>{{ page.organization_name }}</strong></p>
+			<p>
+				{{ page.organization_bio_html | newline_to_br }}
+			</p>
 		<div class="clear">
-			<br>
+			<br />
 			<div class="half">
 				<a href="{{ page.organization_url }}"><img alt="{{ page.organization_name }} logo" src="{{ page.organization_image }}"></a>
 			</div>
@@ -83,9 +79,7 @@ layout: greyPageResources
 			</div><a href="{{ page.organization_url }}"><button>More about {{ page.organization_name_short }}</button></a>
 		</div>
 	</div>
-		<br>
-		<br>
-		<br>
+		<br /><br /><br /><br />
 </div>
 						
 
