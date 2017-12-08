@@ -11,7 +11,7 @@ defaults:
     values:
       layout: "theme"
 
-google_analytics: "UA-105013659-1"
+google_analytics: "UA-110935272-1"
 
 plugins:
   - jekyll-feed
