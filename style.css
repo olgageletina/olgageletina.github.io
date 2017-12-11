@@ -44,7 +44,17 @@ section-narrow {
 
 .intro {
   height: 90vh;
-  background-color: #dad3cb;
+  /*background-color: #dad3cb;*/
+  overflow: hidden;
+}
+
+
+.test {
+  background-image: url(img/cover.jpg);
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .highlight {
@@ -83,6 +93,11 @@ h1 {
   color: #434343;
   font-weight: 300;
   margin-bottom: 0;
+}
+
+
+h1.white {
+  color: #ffffff;
 }
 
 h2 {
