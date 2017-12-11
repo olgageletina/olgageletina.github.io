@@ -134,6 +134,65 @@ img.horizontal {
 }
 
 
+@media all and (max-width: 726px) and (min-width: 481px) and (orientation : portrait) {
+  img.vertical {
+  max-width: 100%;
+  } 
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+    .column-right {
+    width: 100%;
+  }
+
+   .column-left {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3em;
+    padding: 0;
+  }
+
+}
+
+
+@media all and (max-width: 480px) and (min-width: 320px)  and (orientation : portrait) { 
+  
+  img.vertical {
+  max-width: 100%;
+  }  
+
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .column-right {
+    width: 100%;
+    display: contents;
+  }
+
+  .column-left {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3em;
+    padding: 0;
+  }
+
+
+
+
+}
+
+
 /*footer {
   background-color: #908f8f;
   width: 100%;
