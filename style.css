@@ -149,6 +149,7 @@ img.horizontal {
 
     .column-right {
     width: 100%;
+    display: inline-block;
   }
 
    .column-left {
@@ -177,7 +178,7 @@ img.horizontal {
 
   .column-right {
     width: 100%;
-    display: contents;
+    display: inline-block;
   }
 
   .column-left {
