@@ -1,40 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Olga Geletina porfolio test</title>
-	<link href="style.css" rel="stylesheet">
-</head>
-<body>
-<section class="intro test">  
-  <div class="content-narrow">
-  	<br>
-  	<br>
-  	<br>
-    <h1 class="white">If a tapestry could speak for itself, what would it say?</h1>
-    <!-- <img src="img/cover.jpg" class="cover" /> -->
- </div>
-</section>
-<section>  
-  <div class="title">
-    <h2>Textiles of today: a retrospect</h2>
-    </div>
-</section>
-<section-narrow>
-    <div class="column-right">
-    <p>This project proposes to partner with weavers in Sirwa, Morocco to create smart objects using traditional methods. Sirwa is a town thirty miles southeast of the capital, Marrakesh, where textile production dates back to the Paleolithic Era. Sirwan weavers are almost exclusively women, but men typically control the textile trade and its financial gains. I speculate this is because Sirwan artisans lack visibility. Their skills are passed down from one woman to the next, generation after generation, through oral narrative that rarely travels beyond the village.  <br><br>
+---
+layout: menuFooter
+---
 
-    If the weaver’s tapestry could speak for itself, what would it say? Working from the central concept of memory as a tool of oral tradition, I will commission smart objects that will retain the weaver’s “identity” in digital data and physical form. <br><br>
 
-	My goal is to create two kinds of such artifacts: a Near Field Communication (NFC) tag – a passive 888 byte device found in Apple Pay and phone-to-phone communication, as well as fabric swatches incorporating different weaving patterns with shape-memory alloy (SMA) wire. SMA is a material that “remembers” its predetermined shape to which, after deformation, it returns to when heated. <br><br>
+{% include intro-section.html file="img/cover.jpg" 
+text="If a tapestry could speak for itself, what would it say?" %}
 
-	Expanding on the idea of thread as one of the earliest transmitters of meaning, traditionally serving key functions liked to memory such as bookkeeping and recording of history, the project aspires to spur discourse by 888 bytes and a few centimeters. <br><br><br><br>
+{% include about-section.html description= "<p>This project proposes to partner with weavers in Sirwa, Morocco to create smart objects using traditional methods. Sirwa is a town thirty miles southeast of the capital, Marrakesh, where textile production dates back to the Paleolithic Era. Sirwan weavers are almost exclusively women, but men typically control the textile trade and its financial gains. I speculate this is because Sirwan artisans lack visibility. Their skills are passed down from one woman to the next, generation after generation, through oral narrative that rarely travels beyond the village.  <br><br>
+If the weaver’s tapestry could speak for itself, what would it say? Working from the central concept of memory as a tool of oral tradition, I will commission smart objects that will retain the weaver’s “identity” in digital data and physical form. <br><br>
 
-</p>	
-    </div>
-	<div class="column-left">
-	<p> <strong>Thesis project </strong><br> 
+My goal is to create two kinds of such artifacts: a Near Field Communication (NFC) tag – a passive 888 byte device found in Apple Pay and phone-to-phone communication, as well as fabric swatches incorporating different weaving patterns with shape-memory alloy (SMA) wire. SMA is a material that “remembers” its predetermined shape to which, after deformation, it returns to when heated. <br><br>
+
+Expanding on the idea of thread as one of the earliest transmitters of meaning, traditionally serving key functions liked to memory such as bookkeeping and recording of history, the project aspires to spur discourse by 888 bytes and a few centimeters."  
+text="If a tapestry could speak for itself, what would it say?" left = "<strong>Thesis project </strong><br> 
 		Harvard Graduate School of Design <br>
 		<br> 
 		<strong>Advisor </strong><br>
@@ -50,49 +28,27 @@
 		Interfaces <br>
 		<br> 
 		<strong>Geography</strong> <br>
-		Morocco <br>
-	</p>
- </div>
-</section-narrow>
-<section-narrow class="highlight">
-	<h1>SMA fabric</h1>
-	<p> SMA fabric which will respond to environmental cues (potentially using solar energy for operation), contorting based on the underlying structure of the textile. The principle motifs for investigation include an array of textile methods (crochet, knit and weft), fiber pairings (cotton, wool, linen), and thermochromatic thread. Additional investigation may consider integration of peltier cooler to shorten actuation time.</p> <br><br>
-</section-narrow>
+		Morocco <br>" %}
 
-<section class="highlight">
-	<img class="horizontal" src="img/SMA.png" alt="">
-	<br><br><br><br><br>
-</section>
-<section-narrow>
-	<h1>NFC tag</h1>
-	<p>NFC works on the principle of sending information over radio waves at of 13.56 MHz. The main components of this circuit are the antenna and chip, this enables the device to induce electric currents within its passive components during contact with magnetic field generated by an NFC reader (e.g. a smart phone).</p> <br><br>
-</section-narrow>
-<section-narrow>
-	<div class="column-right"> 
-		<img class="vertical" src="img/NFC.png" alt="">
-		<br><br><br><br><br>
-	</div>
-</section-narrow>
-<section class="highlight">
-	<img class="horizontal" src="img/morocco-map.png" alt="">
-	<h2>Sirwan weavers are almost exclusively women, but men typically control the textile trade and its financial gains</h2>
-</section>
+{% include highlight-section.html title="SMA fabric" 
+text="SMA fabric which will respond to environmental cues (potentially using solar energy for operation), contorting based on the underlying structure of the textile. The principle motifs for investigation include an array of textile methods (crochet, knit and weft), fiber pairings (cotton, wool, linen), and thermochromatic thread. Additional investigation may consider integration of peltier cooler to shorten actuation time." image-type ="horizontal" image-file="img/SMA.png" %}
 
-<section-narrow>
-	<h1>Interface</h1>
-	<p>Previously there have been a number of websites featuring Moroccan weavers and their craft. However, a more integrative collaboration gives craftswomen autonomy to expand the functionality of their textiles, without prescriptively changing their practice. <br><br>
+
+{% include section.html title="NFC tag" 
+text="NFC works on the principle of sending information over radio waves at of 13.56 MHz. The main components of this circuit are the antenna and chip, this enables the device to induce electric currents within its passive components during contact with magnetic field generated by an NFC reader (e.g. a smart phone)." image-type ="vertical" image-file="img/NFC.png"  section-type="section-narrow" %}
+
+
+{% include highlight-section-text-bottom.html 
+text="Sirwan weavers are almost exclusively women, but men typically control the textile trade and its financial gains" image-type ="horizontal" image-file="img/morocco-map.png" %}
+
+{% include section.html title="Interface" 
+text="<p>Previously there have been a number of websites featuring Moroccan weavers and their craft. However, a more integrative collaboration gives craftswomen autonomy to expand the functionality of their textiles, without prescriptively changing their practice. <br><br>
 	
-	In January 2018, I will travel to Sirwa. My time on the ground will be primarily dedicated to documentation of the weavers’ methods. Particularly I am interested in discovering ways in which the artisans relay information about their craft to each other. <br><br>
+In January 2018, I will travel to Sirwa. My time on the ground will be primarily dedicated to documentation of the weavers’ methods. Particularly I am interested in discovering ways in which the artisans relay information about their craft to each other. <br><br>
 
-	What would they like to remember? And how? These questions will guide a collection of videos that is both relevant to the artisans and their patrons. After compling the videos, I would like to share a few of them with my subjects and distill main themes that, collectively, we can incorporate into the designs of the tapestries. <br><br>
+What would they like to remember? And how? These questions will guide a collection of videos that is both relevant to the artisans and their patrons. After compling the videos, I would like to share a few of them with my subjects and distill main themes that, collectively, we can incorporate into the designs of the tapestries. <br><br>
 
-	The videos will become a part of the documentation accompanying the project and the designs will remain with the artisans, informing their future creations. <br><br>
-	</p>
-	<img class="horizontal" src="img/weave.png" alt="">
-</section-narrow>
-
-</body>
-</html>
+The videos will become a part of the documentation accompanying the project and the designs will remain with the artisans, informing their future creations." image-type ="horizontal" image-file="img/weave.png"  section-type="section-narrow" %}
 
 
 <!---
