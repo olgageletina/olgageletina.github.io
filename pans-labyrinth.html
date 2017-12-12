@@ -1,0 +1,95 @@
+---
+layout: menuFooter
+---
+
+
+{% include intro-section.html file="img/pan-header.png" 
+text="Pan's labyrinth" %}
+
+{% include about-section.html  title="A multitudinous maze game" description="<p>Labyrinths have taken on a number of meanings throughout history – e.g. devotion, power, games. The first recorded labyrinth dates back to Egypt at the time of king Amenemhet 1842 - 1797 BCE. In my work I was particularly drawn to garden mazes. While the devotional varieties of such mazes have proliferated since the 13th century, secular garden mazes initially appeared as derivative of small artificial hills during the Renaissance and gaining greater popularity in 15th Century France. Often elaborate in their nature, they espoused equal portions of fun and complexity. <br><br>
+
+Developed in Unity, using C#, Pan’s Labyrinth merges the histrorical context of a labyrinth with the simplicity of children's games. "   left = "
+		<strong>Year </strong><br>
+		2017 <br>
+		<br> 
+		<strong>Elements</strong> <br>
+		C# <br>	
+		Unity <br>
+		Game design	<br>
+		<br>
+		<strong>Platform</strong> <br>
+		Unity <br>
+
+		" %}
+
+{% include section.html title="The code" 
+text="Working first with Grasshopper, the maze relies on the object oriented programming paradigm which is organized around entities called objects and their data instead of logic. My maze object contains cells, each with three open walls (represented by meshes), and one wall that is closed off. The cells also have an indication of the four neighbors and whether passage to them is opened or closed as well as the forward and backward direction of the neighboring cells. 	
+" image-type ="horizontal" image-file="img/maze-code.png"  section-type="section-narrow"   section-color = "background-color:rgba(0,0,0,0.06);" %}
+
+
+{% include highlight-section-text-bottom.html 
+text="Inspired by games children play." image-type ="horizontal" image-file="img/matryoshka.gif" %}
+
+{% include section.html title="Solution path" 
+text="Once the maze object is generated it becomes possible to assess which cells are connected. By picking a random first cell, a cost can then be assigned to the rest of the cells, with -1 serving as an indicator of inaccessibility. A variation Dijkstra's algorithm can then be applied to find the shortest path from the first cell to the one farthest away (i.e. highest cost).	<br><br>
+The longest sections of the path are then folded into each other to create star-like coordinates that dance when met with the player's gaze. 
+" image-type ="horizontal" image-file="img/maze-gs.png"  section-type="section-narrow"   section-color = "background-color:rgba(0,0,0,0.2);" %}
+
+
+{% include section.html title="Levels" 
+text="Prototypical units allow the game to scale and easily increase terrain." image-type ="horizontal" image-file="img/weave.png"  section-type="section-narrow" section-color = "background-color:rgba(0,0,0,0.1);" %}
+
+{% include highlight-section-text-bottom.html 
+text="Trailer" %}
+<section-narrow>
+
+<div class="aspect-ratio">
+<iframe src="https://player.vimeo.com/video/246910954" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+<br>
+<br>
+<br>
+
+
+
+</section-narrow>
+
+
+<!---
+layout: greyPage
+-
+<div class="container main">
+
+
+{% for theme_item in site.theme %}
+
+	{% assign col_item = forloop.index | modulo: 5 %}
+
+	{% if col_item == 0 %}
+		{% assign col = 5 %}
+	{% else %}
+		{% assign col = col_item %}
+	{% endif %}
+
+		<div class="section col-{{ col }} themeMain">
+		 	<a href="{{ theme_item.url }}.html"><div class="section themeContent">
+				<h3 class ="themeTitle">{{ theme_item.issue }}</h3>
+				<div class="clear"></div>
+				<p class ="themeCollaborators"> <strong> {{ theme_item.artist_name }} <br>
+				{{ theme_item.organization_name }}</strong></p>
+			</div></a>
+		 	<a href="{{ theme_item.url }}.html" class="image"><img src="{{ theme_item.image_path }}" alt="{{ theme_item.issue }} : {{ theme_item.artist_name }}  and {{ theme_item.organization_name }}"></a>
+		</div>
+
+{% endfor %}
+
+<br>
+
+<div class="section col-1-5">
+	<div class="rule"></div>
+</div>
+
+<br><br><br> 
+
+</div> 
+ -->
