@@ -75,7 +75,7 @@
 
 				
 				//and material
-				material =  new THREE.MeshLambertMaterial({ transparent: true, wireframe: true, color: 0xffffff }) ;
+				material =  new THREE.MeshStandardMaterial({ wireframe: true, color: 0xffffff, emissive:0xffffff}) ;
 
 
 				//sphere!
@@ -183,9 +183,6 @@
 		function max(arr){
 		    return arr.reduce(function(a, b){ return Math.max(a, b); })
 		}
-
-
-		
 
 		</script>
 
