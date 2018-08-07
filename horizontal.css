@@ -10,6 +10,7 @@
     max-height: 100%;
     top: 0;
     left: 0;
+    transform: none;
   }
 
 
@@ -22,7 +23,9 @@
   }
 
   h1.center {
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 25%;
     font-size: 1.3em;
+    transform: none;
+    width: 100%;
   }
