@@ -13,6 +13,7 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, 0%);
+    z-index: 2;
   }
 
   h1.center {
@@ -36,6 +37,7 @@
     top: 64%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
   }
 
   h1.center {
