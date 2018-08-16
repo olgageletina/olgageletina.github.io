@@ -24,22 +24,20 @@
 		var h = window.innerHeight;
 		var activecss = document.getElementById("activecss");
 
-		if (h > w ) {
+		if (h > w && h != w) {
 			activecss.setAttribute("href", "vertical.css");
 		} else if (h < 500){
 			activecss.setAttribute("href", "horizontal.css");
 		}
 
 		console.log(w + " moo " + h);
-		// document.write("<link type='text/css' rel='stylesheet' href='"+ activecss + "'>");	
 		
-
 		window.addEventListener('resize', function(event){
   		
   		var w = window.innerWidth;
 		var h = window.innerHeight;
   		
-  		if (h > w) {
+  		if (h > w && h != w) {
 			activecss.setAttribute("href", "vertical.css");
 		} else if (h < 500)  {
 			activecss.setAttribute("href", "horizontal.css");
@@ -70,7 +68,7 @@
 </div>
 
 <div class="intro-left-column">
-<p> I’m a designer working across a wide range of mediums. This portfolio page is slated for debut fall 2018. In the meantime, here are some things I've done in <a href="http://fab.cba.mit.edu/classes/863.16/section.Harvard/people/Geletina/index.html">2016</a>, <a href="https://issuu.com/geletina/docs/portfolio-2017">2017</a> and <a href="http://fab.cba.mit.edu/classes/MAS.865/people/geletina/">2018</a>. You can also view my <a href="files/Olga-Geletina-CV.pdf">CV</a>. <br>
+<p> I’m a designer working across a wide range of mediums. This portfolio site is slated for debut fall 2018. In the meantime, here are some things I've done in <a href="http://fab.cba.mit.edu/classes/863.16/section.Harvard/people/Geletina/index.html">2016</a>, <a href="https://issuu.com/geletina/docs/portfolio-2017">2017</a> and <a href="http://fab.cba.mit.edu/classes/MAS.865/people/geletina/">2018</a>. You can also view my <a href="files/Olga-Geletina-CV.pdf">CV</a>. <br>
 Outside of design, my pastimes include art, food and all things aquatic.
  
 </p>

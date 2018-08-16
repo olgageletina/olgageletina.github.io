@@ -184,9 +184,9 @@ img.vertical {
 
 .fa, .fab {
   color: white; /*#434343*/
-  padding-right: 10px;
+  padding-right: 5px;
   padding-top: 20px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 h1.center {
@@ -268,11 +268,21 @@ img.horizontal {
     display: inline-block;
   }
 
+  .fa, .fab {
+    padding-right: 5px;
+  }
+
+  .intro-left-column { 
+    width: 35%;
+    left: 64%;
+  }
+
+
 
 }
 
 
-@media all and (max-width: 726px) and (min-width: 481px) and (orientation : portrait) {
+@media all and (max-width: 726px) and (min-width: 481px) {
   
   .intro{
     height: 70vh;
@@ -302,7 +312,7 @@ img.horizontal {
     padding: 0;
   }
 
-  .logo svg{
+/*  .logo svg{
     width: 50%;
     height: auto;
     max-height: none;
@@ -318,7 +328,17 @@ img.horizontal {
 
   h1.center {
     top: 25%;
+  }*/
+
+   .fa, .fab {
+    padding-right: 5px;
   }
+
+  .intro-left-column { 
+    width: 35%;
+    left: 64%;
+  }
+
 
 }
 
