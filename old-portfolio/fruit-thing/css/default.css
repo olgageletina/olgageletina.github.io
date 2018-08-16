@@ -1,0 +1,200 @@
+/* General Demo Style */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@font-face {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Oswald', sans-serif;
+	color: #000000;
+	font-weight: 300;
+	overflow-x: hidden;
+	text-transform: uppercase;
+}
+
+a {
+	color: #869DB8;
+	text-decoration: none;
+}
+
+hl {
+    background-color: #fff;
+    color: #000000;
+    padding: .2em;
+    font-size: 1.1em;
+    line-height: 150%;
+    margin-bottom: 2em;
+
+}
+
+hl2 {
+    background-color: #fff;
+    color: #000000;
+    padding: .2em;
+   	font-size: .6em;
+}
+a:hover,
+a:active {
+	color: #869DB8;
+	border-bottom: 1px solid #869DB8;
+}
+
+/* Header Style */
+.main,
+.container > header {
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.container > header {
+	text-align: center;
+	background: rgba(0,0,0,0.01);
+}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #b14943;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* Main Content */
+.main {
+	max-width: 50em;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #E96D65;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.5);
+	color: #bd4a43;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+
+.codrops-icon-next:before {
+	content: "\e000";
+}
+
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+.body-text {
+	font-size: 60%;
+}
+
+@media screen and (max-width: 25em) {
+
+	hl2 {
+		font-size: .39em;
+		padding: .2em;
+		line-height: 90% !important;
+		width: 100% !important;
+	}
+
+	hl {
+		font-size: .50em;
+		padding: .2em;
+		
+		
+	}
+
+}
+
+@media screen and (max-width: 18.5em) {
+	
+
+	#resimg{
+		background-size: 140% !important;
+	}
+
+	hl2 {
+		font-size: .39em;
+		padding: .2em;
+		line-height: 50% !important;
+
+		
+	}
+
+	hl {
+		font-size: .50em;
+		padding: .2em;
+		width: 100% !important;
+
+		
+	}
+
+}
