@@ -25,13 +25,13 @@
 		<!-- onload="initSlideShow();" -->
 		<div class="home-wrap">
 			<div class="portals portals-type top-right" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-				<section id="hardware" data-position="top-left" class=""> 
+				<a href="hardware/index.html"><section id="hardware" data-position="top-left" class=""> 
 					<!-- née section id videos -->
 					<img class="title" draggable="false" src="img/static-headers/hardware.svg"> 
 					<div class="images">
 						<span class="home-image" style="background-image: url(&quot;img/title-images/3AC6F4.jpg&quot;);"></span>
 					</div>
-					</section>
+					</section></a>
 				<section id="software" data-position="top-center" class=""> 
 					<!-- née section id commercials -->
 					<img class="title" draggable="false" src="img/static-headers/software.svg"> 
@@ -110,6 +110,7 @@
 				</section>
 			</div>
 			<div class="portal-nav"></div>
+			
 		</div>
 
 	</body>
@@ -119,7 +120,6 @@
 		var elID = null;
 		var elements = [];
 		var imgIndex = 0;
-		var img
 
 		container.onmouseover = function(event) {
 		  if (currentElem) {

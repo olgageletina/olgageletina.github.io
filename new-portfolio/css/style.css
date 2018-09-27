@@ -12,8 +12,6 @@
 -------------------------------------------------------------------------------*/
 html,
 body,
-body div,
-span,
 object,
 iframe,
 h1,
@@ -24,6 +22,8 @@ h5,
 h6,
 p,
 blockquote,
+body,
+body div,
 pre,
 abbr,
 address,
@@ -75,14 +75,22 @@ mark,
 audio,
 video,
 details,
+span,
 summary {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 80%;
   vertical-align: baseline;
-  background: transparent;
+  background: transparent; 
 }
+
+/*body,*/
+/*body,
+.portal-wrap {
+  background-color: white !important; 
+}*/
+
 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
 article,
 aside,
@@ -299,13 +307,15 @@ input[type=button] {
   height: 100%;
 }
 /* Fonts */
-@font-face {
+@import url('https://fonts.googleapis.com/css?family=Anton|Anonymous+Pro:400,700');
+
+/*@font-face {
   font-family: 'avernmt';
   src: url('./font/AvernMT-Heavy.eot');
   src: url('./font/AvernMT-Heavy.eot?#iefix') format('embedded-opentype'), url('./font/AvernMT-Heavy.woff') format('woff'), url('./font/AvernMT-Heavy.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
-}
+}*/
 html {
   font-family: 'avernmt', Arial, Helvetica;
 }
@@ -319,7 +329,7 @@ html.scroll {
   overflow-y: auto;
 }
 body {
-  background-color: black;
+  background-color: white;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -366,6 +376,73 @@ a:focus {
   height: 100%;
   background-color: white;
 }
+
+.about-project-left {
+  float: left;
+  width: calc(100%/3);
+  min-height: 100%;
+  overflow: auto;
+  background-color: #ef497b;
+
+}
+
+.project-right{
+  float: left;
+  width: calc(100%*2/3);
+  min-height: 100%;
+  overflow: auto;
+}
+
+.title-wrap a {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+}
+
+.about-text  {
+  padding: 20px;
+  top: 20%;
+  position: sticky;
+}
+
+.project-content  {
+  padding: 20px;
+  /*top: 10%;*/
+  position: sticky;
+}
+
+.about-text p{
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 12pt;
+
+}
+
+.about-text h1{
+  font-family: 'Anton';
+  text-transform: uppercase;
+  font-size: calc(8.2vw*.8);
+  color: white;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: calc((1 - 1) * 0.5em);
+}
+
+.container-iframe {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.container-iframe iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+
 .preloader {
   position: fixed;
   top: 0;
@@ -567,22 +644,22 @@ a:focus {
           user-select: none;
 }
 .portals-type section:nth-child(1) {
-  background-color: #00b87c;
+  background-color: #FF477B;
 }
 .portals-type section:nth-child(2) {
-  background-color: #f2fe68;
+  background-color: #8A92A0;
 }
 .portals-type section:nth-child(3) {
-  background-color: #008af6;
+  background-color: #F2FE68;
 }
 .portals-type section:nth-child(4) {
-  background-color: #ff005c;
+  background-color: #71D9B3;
 }
 .portals-type section:nth-child(5) {
   background-color: #f0aead;
 }
 .portals-type section:nth-child(6) {
-  background-color: #ff6ccf;
+  background-color: #3AC6F4;
 }
 .portals-type section:nth-child(n+7) {
   background-color: black;
@@ -679,7 +756,7 @@ a:focus {
   position: relative;
   float: left;
   width: 100%;
-  height: 85vh;
+  height: 100%;
   cursor: pointer;
   overflow: hidden;
 }
@@ -690,7 +767,9 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 40%;
+  top: 30%;
+  background-color: #ef497b;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -723,6 +802,8 @@ a:focus {
 }
 .video-projects [data-video-title] {
   text-align: center;
+  font-family: 'Anton';
+  text-transform: uppercase;
 }
 .video-projects [data-video-title]:after {
   content: '';
@@ -735,7 +816,7 @@ a:focus {
           transform: translate(-50%, -50%);
   width: 0.95em;
   height: 0.95em;
-  background-image: url('../img/svg/playhead.svg');
+  /*background-image: url('../img/svg/playhead.svg');*/
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -743,9 +824,9 @@ a:focus {
   opacity: 0;
 }
 .video-projects [data-video-title]:hover {
-  color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
 }
-.video-projects [data-video-title]:hover:after {
+/*.video-projects [data-video-title]:hover:after {
   opacity: 1;
 }
 .video-projects [data-img]:first-child:nth-last-child(1) {
@@ -772,7 +853,7 @@ a:focus {
 .video-projects [data-img]:first-child:nth-last-child(6) ~ [data-img] {
   width: 33.3333%;
   height: 50%;
-}
+}*/
 .video-projects .preload {
   display: none!important;
 }
