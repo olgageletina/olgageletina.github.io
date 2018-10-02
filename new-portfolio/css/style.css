@@ -323,8 +323,8 @@ html {
 html {
   overflow: hidden;
   /* think about this... */
-
 }
+
 html.scroll {
   overflow-y: auto;
 }
@@ -364,7 +364,7 @@ a:focus {
           transition: opacity 0.3s ease;
 }
 .portal-wrap.reveal {
-  display: block;
+  display: flex;
   opacity: 1;
 }
 .portal-wrap.fade-out {
@@ -383,14 +383,14 @@ a:focus {
   min-height: 100%;
   overflow: auto;
   background-color: #ef497b;
-
+  /*border-right: solid;*/
 }
 
 .project-right{
   float: left;
   width: calc(100%*2/3);
   min-height: 100%;
-  overflow: auto;
+  overflow-y: scroll !important;
 }
 
 .title-wrap a {
@@ -406,16 +406,133 @@ a:focus {
 }
 
 .project-content  {
-  padding: 20px;
+  padding: 40px;
   /*top: 10%;*/
+  display: inline-block;
   position: sticky;
+  clear: both;
 }
 
-.about-text p{
+.full-content-container, .vertical-left, .vertical-right {
+  padding-top: 40px;
+  width: 100%;
+
+}
+
+
+/**/
+
+.about-text p, p{
   font-family: 'Anonymous Pro', monospace;
   font-size: 12pt;
 
 }
+
+.caption {
+  font-weight: 700;
+}
+
+.vertical-left img{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.vertical-left p{
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+  border-bottom: 10pt solid #ef497b;
+  
+}
+
+.p-container-left {
+  display: inline-block;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.p-container-right {
+  display: inline-block;
+  width: 50%;
+  padding-right: 20px;
+}
+
+
+mark {
+  font-family: 'Anton';
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+
+.vertical-right img{
+  width: 50%;
+  height: auto;
+  float: right;
+  /*border-left: solid;*/
+  /*border-left: solid #ef497b;*/
+}
+
+.vertical-right p{
+  padding-right: 20px;
+  width: 100%;
+  float: right;
+  padding-bottom: 10px;
+  /*border-bottom: 5pt solid #ef497b;*/
+  border-bottom: 10pt solid #ef497b;
+  /*background-color: ;*/
+}
+
+.full-content-container {
+  clear: both;
+  position: relative;
+}
+
+.full-content-container img{
+  width: 100%;  
+  background: none;
+  /*z-index: -10;*/
+}
+
+.full-content p{
+  padding: 20px;
+  color: white;
+  /*border-top: 10pt solid #ef497b;*/
+}
+
+.full-content-title{
+  width: 100%;
+  background-color: #ef497b;
+  /*background: fixed;*/
+  position: absolute;
+  height: 25%;
+  bottom: 0;
+  /*-webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;*/
+  padding: 20px;
+}
+
+/*.full-content-title:hover {
+  opacity: 0;
+}*/
+
+.vertical-left {
+  float: left;
+}
+
+.vertical-right {
+  float: right;
+}
+
+/*.rule {
+  height: 3pt;
+  background-color: black;
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  clear: both;
+}*/
 
 .about-text h1{
   font-family: 'Anton';
@@ -713,7 +830,7 @@ a:focus {
   margin: auto;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   -webkit-transition: opacity 0.6s ease;
           transition: opacity 0.6s ease;
 }
