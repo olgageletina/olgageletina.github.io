@@ -383,7 +383,7 @@ a:focus {
   min-height: 100%;
   overflow: auto;
   background-color: #ef497b;
-  /*border-right: solid;*/
+  position:relative;
 }
 
 .project-right{
@@ -402,12 +402,15 @@ a:focus {
 .about-text  {
   padding: 20px;
   top: 20%;
-  position: relative;
+  width:100%;
+  height:auto;
+  background-color:#999999;
+  position:absolute;
+  background: transparent;
 }
 
 .project-content  {
   padding: 40px;
-  /*top: 10%;*/
   display: inline-block;
   position: sticky;
   clear: both;
