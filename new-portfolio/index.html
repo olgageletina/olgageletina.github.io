@@ -25,18 +25,18 @@
 		<!-- onload="initSlideShow();" -->
 		<div class="home-wrap">
 			<div class="portals portals-type top-right" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-				<a href="hardware/index.html"><section id="hardware" data-position="top-left" class=""> 
-					<!-- née section id videos -->
-					<img class="title" draggable="false" src="img/static-headers/hardware.svg"> 
-					<div class="images">
-						<span class="home-image" style="background-image: url(&quot;img/title-images/3AC6F4.jpg&quot;);"></span>
-					</div>
-					</section></a>
-				<section id="software" data-position="top-center" class=""> 
+				<a href="hardware/index.html">
+					<section id="hardware" data-position="top-left" class=""> 
+						<img class="title" draggable="false" src="img/static-headers/hardware.svg"> 
+					</section>
+				</a>
+				<a href="hardware/index.html">
+				<section id="software" data-position="top-left" class=""> 
 					<!-- née section id commercials -->
 					<img class="title" draggable="false" src="img/static-headers/software.svg"> 
 					</section>
-				<section id="still-motion" data-position="top-right" class=""> 
+				</a>
+				<section id="still-motion" data-position="top-left" class=""> 
 					<!-- née section id store -->
 					<img class="title" draggable="false" src="img/static-headers/still-motion.svg">
 					</section>
@@ -123,8 +123,6 @@
 
 		container.onmouseover = function(event) {
 		  if (currentElem) {
-		    // before entering a new element, the mouse always leaves the previous one
-		    // if we didn't leave <section> yet, then we're still inside it, so can ignore the event
 		    return;
 		  }
 
