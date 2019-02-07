@@ -1,4 +1,4 @@
-/*
+  /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
 	We have learned much from/been inspired by/taken code where offered from:
@@ -429,6 +429,7 @@ a:focus {
 .about-me{
   padding: 40px;
   width: 100%;
+  background-color: #3AC6F4;
 }
 
 .about-me-text{
@@ -436,9 +437,45 @@ a:focus {
   width: 300px;
   position: absolute;
   left: 50%;
-  top: 65%;
+  top: 20%;
   transform: translate(-50%, -50%);
   
+}
+
+ul.icons {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+ul.icons li {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 40px;
+    margin: 0 10px;
+}
+
+ul.icons li a {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    height: 100%;
+    width: 100%;
+}
+
+ul.icons li a img.social {
+    width: 100%;
+    position: relative;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
 }
 
 .st0 {
